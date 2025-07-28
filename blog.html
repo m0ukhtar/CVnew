@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahamat Moukhtar - Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Même en-tête que votre CV -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" data-text="MM">MM</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="index.html#about" class="nav-link">À Propos</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Hero du blog -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Mon Journal Professionnel</h1>
+            <p>Découvertes techniques, voyages d'étude et réflexions sur l'ingénierie</p>
+        </div>
+    </section>
+
+    <!-- Catégories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-filter">
+                <button class="active" data-category="all">Tous</button>
+                <button data-category="voyages">Voyages techniques</button>
+                <button data-category="projets">Projets</button>
+                <button data-category="reflexions">Réflexions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid">
+                <!-- Article 1 -->
+                <article class="post-card" data-category="voyages">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Visite industrielle">
+                        <div class="post-date">15 Juin 2024</div>
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Voyage technique</span>
+                        <h3>Visite du centre aérospatial de Toulouse</h3>
+                        <p>Découverte des innovations en propulsion aéronautique et échanges avec les ingénieurs...</p>
+                        <a href="article.html" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="post-card" data-category="projets">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Projet drone">
+                        <div class="post-date">2 Mai 2024</div>
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Projet académique</span>
+                        <h3>Optimisation des algorithmes de contrôle d'un drone</h3>
+                        <p>Retour d'expérience sur l'amélioration des performances de notre prototype de drone autonome...</p>
+                        <a href="article.html" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="post-card" data-category="reflexions">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Réflexion">
+                        <div class="post-date">20 Avril 2024</div>
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Réflexion</span>
+                        <h3>L'éthique dans l'aéronautique autonome</h3>
+                        <p>Analyse des enjeux éthiques soulevés par les derniers développements en IA appliquée à l'aviation...</p>
+                        <a href="article.html" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="post-card" data-category="voyages">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Shenyang">
+                        <div class="post-date">10 Mars 2024</div>
+                    </div>
+                    <div class="post-content">
+                        <span class="post-category">Voyage technique</span>
+                        <h3>Semestre en Chine : immersion dans l'industrie aérospatiale</h3>
+                        <p>Comparaison des approches françaises et chinoises en conception aéronautique...</p>
+                        <a href="article.html" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h3>Restez connecté</h3>
+            <p>Recevez mes nouveaux articles directement par email</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email professionnel" required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Même pied de page que votre CV -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="logo">MM</a>
+                <p class="footer-text">Ingénieur Mécatronique spécialisé en aéronautique autonome</p>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="index.html#about">À Propos</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mahamat Moukhtar. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Filtrage des articles
+        document.querySelectorAll('.category-filter button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Mettre à jour le bouton actif
+                document.querySelectorAll('.category-filter button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+                
+                // Filtrer les articles
+                const category = button.getAttribute('data-category');
+                document.querySelectorAll('.post-card').forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category').includes(category)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
